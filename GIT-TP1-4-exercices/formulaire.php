@@ -29,17 +29,6 @@
 			echo "Age conforme" . "<br>";
 		}
 	}
-		
-
-	if (file_exists($_POST['cv'])){ // Verification  du CV
-		echo "Le fichier n'est pas présent" . "<br>";
-	}
-
-	else {
-		echo "Le fichier est présent" . "<br>";
-	}
-
-
 
 	$df= fopen('/home/a-derchain/Bureau/liste.pdf','w');  //Met les informations dans un pdf
 	fwrite($df,$_POST['lname'].", ".$_POST['fname'].", ".$_POST['age'].", "

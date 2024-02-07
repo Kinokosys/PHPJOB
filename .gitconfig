@@ -1,0 +1,15 @@
+[http]
+	proxy = http://172.16.0.54:8080
+	proxy = http://Ines
+[credential]
+	helper = 
+	helper = /usr/local/bin/git-credential-manager
+	credentialStore = cache
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[user]
+	name = Ines Mzyene
+	email = emmawasnotthere@gmail.com
+[core]
+	editor = default_editor
+	excludesFile = **/*.log
